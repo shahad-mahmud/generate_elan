@@ -1,6 +1,6 @@
 # GENERATE ELAN
 
-This package reads all the audio files in the directory and generates an ELAN file for each audio file.
+This package reads all the audio files in one or more directories and generates an ELAN file for each audio file in the corresponding directory.
 
 ## Installing
 
@@ -12,17 +12,17 @@ pip install generate-elan
 
 ## How to use
 
-Generate ELAN files (with `.eaf` extension) from of audio files from a directory:
+Generate ELAN files (with `.eaf` extension) from of audio files from directories:
 
 ```bash
-python -m generate_elan -d DIRECTORY
+python -m generate_elan -d DIRECTORY [DIRECTORY ...]
 ```
 
 You can also specify some options:
 
 ```bash
--d DIRECTORY, --directory DIRECTORY
+-d, --directory DIRECTORY [DIRECTORY ...]
                         Directory containing audio files
--e EXTENSION, --extension EXTENSION
-                        Audio extension
+-e, --extension EXTENSION
+                        Audio extension (default: .wav)
 ```

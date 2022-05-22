@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '1.0.1'
+VERSION = '1.1.0'
 
 with open("README.md") as f:
     long_description = f.read()
@@ -20,5 +20,5 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
-    install_requires=["pympi-ling"]
+    install_requires=["pympi-ling", "tqdm"]
 ) 

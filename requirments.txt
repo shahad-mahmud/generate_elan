@@ -1,1 +1,2 @@
-pympi
+pympi-ling
+tqdm
